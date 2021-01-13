@@ -2,7 +2,7 @@
 // the keyword const to  create a constant variable 
 // Both const and let does not hoist your variables to the top as like var
 
-let number = 5; // This creates a regular variable
+let number = 5;     // This creates a regular variable
 const minWage = 50; // This creates a constant (i.e, the value cannot be changed after this line)
 
 

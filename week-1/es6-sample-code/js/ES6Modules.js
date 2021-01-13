@@ -1,6 +1,6 @@
 // Import modules
-import Person from "./Person.js";
-import movies from "./Arrays.js";
+import Person from "./person.js";
+import movies from "./arrays.js";
 
 // What and who is "Person"?
 const p1 = new Person("Jon","Snow");

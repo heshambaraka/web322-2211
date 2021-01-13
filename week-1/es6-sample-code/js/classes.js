@@ -50,7 +50,7 @@ console.log(p1.lastName);
 
 
 
-const p2 = new Person("Thanos", "Thanos", 53, "Nowhere", "male", "Peter Parker");
+const p2 = new Person("Thanos", "Thanos", 53, "Titan", "male", "Thane");
 
 console.log("\n\nP2 INFO: \n");
 console.log(p2.firstName);

@@ -40,9 +40,9 @@ displayInfo(person.firstName, person.gender, person.contact.phoneNo);
 
 
 // Destructuring for an Array
-const movies = [ "Titanic", "The Avengers: Infinity Wars", "The Matrix", "Bad Boy II" ];
+const movies = [ "Titanic", "The Avengers: Infinity Wars", "The Matrix", "Bad Boys II" ];
 
-const [ mov1, mov2, mov3, ] = movies;
+const [ mov1, mov2, mov3 ] = movies;
 
 console.log(mov1);
 console.log(mov2);
