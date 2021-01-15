@@ -43,7 +43,7 @@ doSomething2();
 
 // Arrow functions, like Function expressions, do not hoist to the top
 
-const doSomething3 =  () => 
+const doSomething3 = () => 
 {
     console.log("Hello (Arrow Functions)");
 }
@@ -74,7 +74,7 @@ console.log(areaOfRectangle(2,3));
 
 
 
-const doSomething4 = () => console.log("Arrow Funciton");
+const doSomething4 = () => console.log("Arrow Function");
 
 doSomething4();
 
@@ -84,6 +84,6 @@ const doSomething5 = () =>
 {
     console.log("Hello");
     console.log("Hello Again");
-}
+};
 
 doSomething5();

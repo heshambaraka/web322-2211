@@ -23,7 +23,7 @@ class Person
     // Methods
     displayFullName()
     {
-        return `${this.firstName}  ${this.lastName}`;
+        return `${this.firstName} ${this.lastName}`;
     }
 }
 

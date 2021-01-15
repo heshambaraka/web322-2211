@@ -1,5 +1,5 @@
 
-const doSomething = (name = "no value", age = "no value")=>
+const doSomething = (name = "no value", age = "no value") =>
 {
 
     if (name == "no value" && age == "no value")
@@ -11,7 +11,7 @@ const doSomething = (name = "no value", age = "no value")=>
     console.log(`${age}`);
 }
 
-doSomething(); 
+doSomething();
 doSomething("Jon Snow");
-doSomething("Jon Snow", undefined);
 doSomething(undefined, 40);
+doSomething("Jon Snow", undefined);

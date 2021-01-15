@@ -38,12 +38,12 @@ function test1()
 
 function test2()
 {
-    // You cannot access value in this funciton because
+    // You cannot access value in this function because
     // value was declared in another variable
     return value + value;
 }
 
-function printMesssage()
+function printMessage()
 {
     // No block scope with var 
 
@@ -56,9 +56,9 @@ function printMesssage()
     console.log(i);
 }
 
-printMesssage();
+printMessage();
 
-function printMesssage()
+function printMessage2()
 {
     
     // Block Scope with let 
@@ -72,4 +72,4 @@ function printMesssage()
     console.log(i);
 }
 
-printMesssage2();
+printMessage2();
