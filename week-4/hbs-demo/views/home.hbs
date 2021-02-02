@@ -1,0 +1,21 @@
+<table border='1'>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Occupation</th>
+        <th>Company</th>
+    </tr>
+    {{#each employees}}
+        {{#if visible}}
+            {{>employee this}}
+        {{else}}
+            <tr>
+                <td colspan="4">User {{name}} has hidden their information.</td>
+            </tr>
+        {{/if}}
+    {{else}}
+        <tr>
+            <td colspan="4">No data available</td>
+        </tr>            
+    {{/each}}
+</table>
