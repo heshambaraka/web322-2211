@@ -1,0 +1,13 @@
+<h2>Login User</h2>
+{{#each errors}}
+    <p style="color: red;">{{this}}</p>
+{{/each}}
+<form method="POST" action="/user/login">
+    <label for="username">Email</label>
+    <input type="text" id="email" name="email"><br><br>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password"> <br><br>
+
+    <input type="submit" value="Login">
+</form>
