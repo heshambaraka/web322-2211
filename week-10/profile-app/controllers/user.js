@@ -39,19 +39,24 @@ router.post("/register", (req, res) => {
             })
             .then(() => {
                 console.log("User document was updated with the profile pic file name.")
+
+                // Create a new session and set the user to the
+                // "user" document returned from the DB.
+                req.session.user = user;
+
+                res.redirect("/");
+            })
+            .catch((err) => {
+                console.log(`Error updating the user.  ${err}`);
+                res.redirect("/");
             });
-
-            // Create a new session and set the user to the
-            // "user" document returned from the DB.
-            req.session.user = user;
         });
-
     })
     .catch((err) => {
         console.log(`Error adding user to the database.  ${err}`);
-    });
 
-    res.redirect("/");
+        res.redirect("/");
+    });
 });
 
 // Set up login page
